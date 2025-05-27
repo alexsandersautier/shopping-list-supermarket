@@ -1,8 +1,8 @@
 from decouple import config
 from datetime import datetime
 
-right_user = config('USERAPP')
-right_password = config('PASSWORD')
+# right_user = config('USERAPP')
+# right_password = config('PASSWORD')
 
 months = {
     1: 'Jan',
@@ -21,8 +21,8 @@ months = {
 
 class Config:
 
-    user = right_user
-    password = right_password
+    # user = right_user
+    # password = right_password
     currenty_date = f'{months[datetime.now().month]}/{datetime.now().year}'
 
 system = Config()
